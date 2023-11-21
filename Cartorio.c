@@ -16,8 +16,8 @@ int registro()//int função=
 	
 	strcpy(arquivo,cpf); //strcpy copia o valor das strings
 	
-	FILE *file; //FILE biblioteca\file arquivo
-	file = fopen(arquivo, "w"); //"w"escreve o arquivo\fopen abre o arquivo
+	FILE *file; //FILE biblioteca \file arquivo
+	file = fopen(arquivo, "w"); //"w"escreve o arquivo \fopen abre o arquivo
 	fprintf(file,cpf); //salva o valor da variavel
 	fclose(file); //fecha arquivo
 	
@@ -70,14 +70,14 @@ int consulta()
 	scanf("%s",cpf);
 	
 	FILE *file;
-	file = fopen(cpf,"r");//"r" lê o arquivo
+	file = fopen(cpf,"r"); //"r" lê o arquivo
 	
 	if(file == NULL)
 	{
 		printf("Usuário não encontrado! \n");
 	}
 	
-	while(fgets(conteudo, 200, file) != NULL)//fgets busca arquivo
+	while(fgets(conteudo, 200, file) != NULL) //fgets busca arquivo
 	{
 		printf("\n Informações do usuário: ");
 		printf("%s", conteudo);
@@ -125,9 +125,9 @@ int deletar()
 		
 			setlocale(LC_ALL, "Portuguese"); //Definindo linguagem
 	
-			printf("### Central De Usuários ###\n\n");  //printf=texto  /n=pular linha
+			printf("### Central De Usuários ###\n\n");  //printf=texto  \n=pular linha
 			printf("Escolha a opção desejada:\n\n");
-			printf("\t1 - Registrar usuários\n");  // "/"paragrafo
+			printf("\t1 - Registrar usuários\n");  // "\t"paragrafo
 			printf("\t2 - Consultar usuários\n");
 			printf("\t3 - Deletar usuários\n");
 			printf("\t4 - Sair do sistema\n\n");
