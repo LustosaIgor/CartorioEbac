@@ -127,10 +127,11 @@ int deletar()
 	
 			printf("### Central De Usuários ###\n\n");  //printf=texto  /n=pular linha
 			printf("Escolha a opção desejada:\n\n");
-			printf("\t1- Registrar Usuários\n");  // "/"paragrafo
-			printf("\t2- Consultar Usuários\n");
-			printf("\t3- Deletar Usuários\n\n");
-			printf("Opção: ");
+			printf("\t1 - Registrar usuários\n");  // "/"paragrafo
+			printf("\t2 - Consultar usuários\n");
+			printf("\t3 - Deletar usuários\n");
+			printf("\t4 - Sair do sistema\n\n");
+			printf("Opção:");
 		
 			scanf("%d", &opcao);//armazena informações
 	
@@ -151,6 +152,12 @@ int deletar()
 				deletar();
 				break;
 			
+				case 4:
+				printf("Obrigado por utilizar o sistema!\n");
+				return 0; // "return 0" quebra laço, função e etc.
+				break;
+					
+				
 				default:
 				printf("Essa opção está indisponivel!\n");
 				system("pause");
